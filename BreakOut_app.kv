@@ -1,0 +1,53 @@
+
+<Ball>:
+    size: 20,20
+    canvas:
+        Ellipse:
+            pos: self.pos
+            size: 20,20
+<Brick>:
+    size: 95,30
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: 95,30
+<Pad>:
+    size: 95,30
+    canvas:
+
+        Rectangle:
+            pos: self.pos
+            size: 95,30
+
+
+
+<Game>:
+    Label:
+        id: lives
+        text: f"lives : {str(root.lives)}"
+        font_size: 20
+        pos:0,250
+    Ball:
+        id: ball
+        size_hint_x: None
+        size_hint_y: None
+        size: 20,20
+    Pad:
+        id: pad
+        pos:400,0
+        size_hint_x: None
+        size_hint_y: None
+        size: 95,30
+    Label:
+        id: status
+        pos: 25,0
+        text: ''
+        font_size: 100
+
+
+
+
+
+
+
+
